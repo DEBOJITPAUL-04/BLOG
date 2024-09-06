@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(pexels-felixmittermeier-956999.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.logo {
+    position: fixed;
+    top: 23px;
+    left: 130px;
+    font-size: 24px;
+    width: 200px;
+    height: 45px;
+    text-decoration: none;
+    color: #ededed;
+}
+
+nav {
+    position: absolute;
+    width: 620px;
+    height: 50px;
+    background-color: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    font-size: 28px;
+    right: 80px;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    padding: 0px 40px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(60deg, #4f1919, #3b1c8c);
+    border-radius: 8px;
+    transition: .5s;
+}
+
+nav a:nth-child(1):hover~span {
+    left: 0;
+}
+
+nav a:nth-child(2):hover~span {
+    left: 155px;
+}
+
+nav a:nth-child(3):hover~span {
+    left: 310px;
+    width: 130px;
+}
+
+nav a:nth-child(4):hover~span {
+    left: 479px;
+    width: 145px;
+}
+
+div {
+    color: white;
+}
+
+.bd {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.bd-cont h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.bd-cont h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.bd-cont p {
+    font-size: 16px;
+    margin: 20px 0px 40px;
+}
+
+.bd-cont .btn {
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #04060b;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn a:first-child {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3b1c8c;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn a:hover::before {
+    width: 100%;
+}
+
+.bds {
+    position: relative;
+    bottom: 80px;
+    left: 140px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bds a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    transition: .5s;
+    overflow: hidden;
+}
+
+
+.bds a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: #00abf0;
+}
+
+.bds a:hover::before {
+    width: 100%;
+}
+
+.bds a:hover {
+    color: #081b39;
+}
+
+section {
+    position: relative;
+    bottom: 80px;
+}
+
+.yt {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.hd {
+    font-size: 88px;
+    position: relative;
+    bottom: 20px;
+    color: #00abf0;
+}
+
+section p {
+    color: white;
+    display: flex;
+    width: 600px;
+    padding: 0px 20px 0px 20px;
+    position: relative;
+    left: 140px;
+    bottom: 210px;
+}
+
+.football {
+    display: flex;
+    flex-direction: row;
+}
+
+.img2 {
+    position: relative;
+    left: 140px;
+    bottom: 100px;
+}
+
+.football h1 {
+    color: #00abf0;
+    font-size: 80px;
+    position: relative;
+    bottom: 120px;
+    left: 250px;
+}
+
+.rma {
+    color: white;
+    position: relative;
+    left: 800px;
+    bottom: 300px;
+    height: 100px;
+    width: 650px;
+}
